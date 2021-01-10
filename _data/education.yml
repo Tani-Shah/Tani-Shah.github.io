@@ -1,10 +1,15 @@
-- course: BSc Computer Science
-  institute: University of Birmingham
-  dates: 2018 - 2021
-  logo: uob.png
+- course: BSc Interdisciplinary Computing with Biology
+  institute: University of Kansas
+  dates: 2019 - 2023 (Expected)
+  logo: KU.png
   
-- course: Explorer Fellow
-  institute: MLH Fellowship
+- course: Programming for Everybody (Getting Started with Python)
+  institute: Coursera - University of Michigan
   dates: Fall 2020
-  logo: fellowship.svg
+  logo: Michigan.png
+  
+- course: Programming Foundations with HTML, CSS and JavaScript
+  institute: Coursera - Duke University
+  dates: Winter 2020
+  logo: Duke.png
   
