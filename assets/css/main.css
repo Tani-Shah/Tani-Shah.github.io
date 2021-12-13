@@ -2615,12 +2615,30 @@ input, select, textarea {
 				width: 100%;
 			}
 		
-		.image.try{
-			display: block;
+		.image.flappy{
+			/* display: block; */
+			margin: 3em 3em 3em 3.8em;
+			max-width: 200px;
+			height: 350px; 
+			object-fit: contain;
+		}
+
+		.image.battleship{
+			/* display: block; */
+			margin: 3em 0em 3em 1em;
+			max-width: 300px;
+			height: 300px; 
+			object-fit: contain;
+		}
+
+		.image.incognito{
+			/* display: block; */
 			margin: 3em 0em 3em 3em;
-			/* top: 0.25em; */
-			max-width: 26%;
-			/* height: 25%; */
+			max-width: 265px;
+			height: 100px; 
+			object-fit: contain;
+			align-self: center;
+			filter: invert(100%);
 		}
 
 /* List */
