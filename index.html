@@ -50,11 +50,11 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image try"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image incognito"><img src="images/incognito.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Senior Software Engineering Capstone Design Project: Incognito</h2>
-									<p>Currently working as part of a five-member team on creating resources that could assist volunteers and employees at the National Center for Suicide Prevention, help people struggling with their mental health, and improve responses in situations of assault. Software includes a chatbot, social network and emergency alert device.</p>
+									<h2>Incognito</h2>
+									<p>A Senior Software Engineering Capstone Design Project in progress at this time. Currently working as part of a five-member team on creating resources that could assist volunteers and employees at the National Center for Suicide Prevention, help people struggling with their mental health, and improve responses in situations of assault. Software includes a chatbot, social network and emergency alert device.</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
@@ -62,7 +62,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image try"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image flappy"><img src="images/flappy-bird.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Flappy Bird</h2>
@@ -74,7 +74,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image try"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image battleship"><img src="images/battleship.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Battleship</h2>
@@ -220,18 +220,18 @@
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="entry.1244155159" id="entry.1244155159" />
+												<input type="text" name="entry.1244155159" id="entry.1244155159" required />
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="entry.678085574" id="entry.678085574" />
+												<input type="text" name="entry.678085574" id="entry.678085574" required/>
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="entry.614154599" id="entry.614154599" rows=6"></textarea>
+												<textarea name="entry.614154599" id="entry.614154599" rows="6" required></textarea>
 											</div>
 										</div>
-										<button type="submit" onclick="location.href = 'generic.html';">Send Message</button>
+										<button type="submit" onclick="contactSubmit()">Send Message</button>
 										<!-- <ul class="actions">
 											<li><a href="https://people.eecs.ku.edu/~t956s972/generic.html" class="button submit">Send Message</a></li>
 										</ul> -->
@@ -290,14 +290,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script type="text/javascript">var submitted=false;</script>
-			<script type="text/javascript">
-			$('#gform').on('submit', function(e) {
-			$('#gform *').fadeOut(2000);
-			$('#gform').prepend('Your submission has been processed...');
-			});
+			<script>
+			function contactSubmit(){
+				inputs = [];
+				inputResponses = document.querySelectorAll("input");
+				inputs = Array.from(inputResponses).filter( input => input.value !== "");
+				if (inputs.length==2){
+					window.location.href = "generic.html";
+				}
+				else{
+					alert("Empty");
+				}
+			}
 			</script>
-
 	</body>
 </html>
