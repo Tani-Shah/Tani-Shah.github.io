@@ -216,26 +216,28 @@
 							<p>If you think I am interesting and wish to contact me, feel free to contact me through the links below. You can also directly send a message using the form below. I am also currently looking for full-time work positions.</p>
 							<div class="split style1">
 								<section>
-									<form action="contact-form-handler.php" method="POST">
+									<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeS8GZ59_SnD0efeNkoDJ_AbrPt5SP3WoOEXm7dPLuTNvs9HQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="entry.1244155159" id="entry.1244155159" />
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<input type="text" name="entry.678085574" id="entry.678085574" />
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												<textarea name="entry.614154599" id="entry.614154599" rows=6"></textarea>
 											</div>
 										</div>
-										<!-- <button type="submit">Send Message</button> -->
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
+										<button type="submit" onclick="location.href = 'generic.html';">Send Message</button>
+										<!-- <ul class="actions">
+											<li><a href="https://people.eecs.ku.edu/~t956s972/generic.html" class="button submit">Send Message</a></li>
+										</ul> -->
 									</form>
+
+									<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 								</section>
 								<section>
 									<ul class="contact">
@@ -288,6 +290,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script type="text/javascript">var submitted=false;</script>
+			<script type="text/javascript">
+			$('#gform').on('submit', function(e) {
+			$('#gform *').fadeOut(2000);
+			$('#gform').prepend('Your submission has been processed...');
+			});
+			</script>
 
 	</body>
 </html>
