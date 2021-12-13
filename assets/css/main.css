@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #008080;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2356,7 +2356,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #312450;
+			background: #008080;
 		}
 
 		select:focus::-ms-value {
@@ -2638,6 +2638,17 @@ input, select, textarea {
 			height: 100px; 
 			object-fit: contain;
 			align-self: center;
+		}
+
+		.image.thank{
+			/* display: block; */
+			margin: 3em 3em 3em 3em;
+			margin-left: 20%;
+			max-width: 265px;
+			height: 500px; 
+			object-fit: contain;
+			align-self: center;
+			;
 		}
 
 /* List */
@@ -3263,7 +3274,7 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #008080;
 		}
 
 		.wrapper.style1 {
@@ -3405,16 +3416,16 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #009999;
+		background-color: #003846;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding: 1em 2em;
 	}
 
 		#header > .title {
 			border: 0;
 			color: #ffffff;
 			display: block;
-			font-size: 1.25em;
+			font-size: 1em;
 			font-weight: bold;
 		}
 
@@ -3444,16 +3455,16 @@ input, select, textarea {
 
 					#header > nav > ul > li a {
 						border: 0;
-						color: rgba(255, 255, 255, 0.35);
+						color: rgba(255, 255, 255, 0.692);
 						display: inline-block;
-						font-size: 0.6em;
+						font-size: .7em;
 						font-weight: bold;
 						letter-spacing: 0.25em;
 						text-transform: uppercase;
 					}
 
 						#header > nav > ul > li a:hover {
-							color: rgba(255, 255, 255, 0.55);
+							color: rgba(255, 255, 255, 0.89);
 						}
 
 						#header > nav > ul > li a.active {
@@ -3892,7 +3903,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #008080;
+							background-color: #003846;
 						}
 
 		}
@@ -3976,6 +3987,14 @@ input, select, textarea {
 	}
 
 	#footer {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	#wrapper {
 		background-attachment: fixed;
 		background-image: url("images/intro.svg");
 		background-position: top right;
