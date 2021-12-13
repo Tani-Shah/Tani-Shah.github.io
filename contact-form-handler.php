@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
     if(isset($POST['submit'])){
         header('Location: http://127.0.0.1:5500/generic.html');
         exit;
@@ -15,9 +15,10 @@
         mail($to,$subject,$message,$headers);
         mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
         }
-?>
-<!-- 
+?> -->
+
 <?php
+$myemail = 'tanishkashah24@gmail.com';
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
 $message = $_POST['message']; 
@@ -42,4 +43,4 @@ mail($to,$email_subject,$email_body,$headers);
 
 header('Location: generic.html');
 
-?> -->
+?>
